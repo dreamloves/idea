@@ -470,7 +470,7 @@ async def txt_handler(bot: Client, m: Message):
             namme = nameeex.replace("\t", "").replace(":", "").replace("/","").replace("+", "").replace("#", "").replace("|", "").replace("@", "").replace("*", "").replace(".", "").replace("/u","").replace('"','').replace('mp4','').replace('mkv','').replace('m3u8','').strip()[:60]
             name = namme.strip()
 	except IndexError:
-        pass
+         pass
       command_to_exec = [
               "yt-dlp",
               "--no-warnings",
